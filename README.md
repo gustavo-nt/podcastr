@@ -9,7 +9,7 @@
 <p align="center">Aplicação desenvolvida durante a NLW5 na trilha de React</p>
 
 <p align="center">
-  <img src="https://img.shields.io/badge/react%20version-17.0.2informational"/>
+  <img src="https://img.shields.io/badge/react%20version-17.0.2-informational"/>
   <img src="https://img.shields.io/badge/next%20version-10.1.3-important" />
   <img src="https://img.shields.io/badge/last%20commit-april-blue" />
   <img src="https://img.shields.io/badge/license-MIT-success"/>
