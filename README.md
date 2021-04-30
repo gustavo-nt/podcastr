@@ -1,5 +1,5 @@
 <h4 align="center">
-  <img src="https://github.com/gabriel-nt/podcastr/blob/main/public/logo.svg" alt="logo" height="50"/>
+  <img src="https://github.com/gustavo-nt/podcastr/blob/main/public/logo.svg" alt="logo" height="50"/>
 </h4>
 
 <h1 align="center">
