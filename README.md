@@ -85,7 +85,7 @@ Esse projeto foi utilizou das seguintes lib:
 - date-fns
 - styled-components
 - rc-slider
-- json server
+- json-server
 
 ### 📝 Licença
 
