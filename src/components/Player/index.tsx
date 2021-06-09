@@ -5,7 +5,8 @@ import { usePlayer } from '../../contexts/PlayerContext';
 import 'rc-slider/assets/index.css';
 import styles from './styles.module.scss';
 import { convertDurationToTimeString } from '../../utils/convertDurationToTimeString';
-import { clear } from 'node:console';
+import { AiOutlinePause } from 'react-icons/ai';
+import { BsFillPlayFill } from 'react-icons/bs';
 
 export function Player() {
     const audioRef = useRef<HTMLAudioElement>(null);
@@ -71,16 +72,20 @@ export function Player() {
             </header>
 
             { episode ? (
-                <div className={styles.currentEpisode}>
-                    <Image 
-                        width={592} 
-                        height={592} 
-                        src={episode.thumbnail}
-                        objectFit="cover"
-                    />
-                    <strong>{episode.title}</strong>
-                    <span>{episode.members}</span>
-                </div>
+                <>
+                    <span>{episode.title}</span>
+
+                    <div className={styles.currentEpisode}>
+                        <Image 
+                            width={592} 
+                            height={592} 
+                            src={episode.thumbnail}
+                            objectFit="cover"
+                        />
+                        <strong>{episode.title}</strong>
+                        <span>{episode.members}</span>
+                    </div>
+                </>
             ): (
                 <div className={styles.emptyPlayer}>
                     <strong>Selecione um podcast para ouvir</strong>
@@ -129,9 +134,11 @@ export function Player() {
                     </button>
                     <button type="button" className={styles.playButton} disabled={!episode} onClick={togglePlay}>
                         { isPlaying ? (
-                            <img src="/pause.svg" alt="Pausar"/>
+                            // <img src="/pause.svg" alt="Pausar"/>
+                            <AiOutlinePause />
                         ) : (
-                            <img src="/play.svg" alt="Tocar"/>
+                            // <img src="/play.svg" alt="Tocar"/>
+                            <BsFillPlayFill />
                         )}
                     </button>
                     <button type="button" disabled={!episode || !hasNext} onClick={playNext}>
