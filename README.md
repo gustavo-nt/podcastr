@@ -83,7 +83,6 @@ Esse projeto foi utilizou das seguintes lib:
 - react-dom
 - axios
 - date-fns
-- styled-components
 - rc-slider
 - json-server
 
