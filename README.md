@@ -71,7 +71,7 @@ $ yarn start
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- React
+- ReactJS
 - Typescript
 - Next.js
 
