@@ -73,8 +73,7 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 
 - React
 - Typescript
-- Next
-- Node
+- Next.js
 
 ### 📕 Bibliotecas
 
