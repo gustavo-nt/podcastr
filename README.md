@@ -18,6 +18,7 @@
 <p align="center">
   <a href="#-features">Features</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-pré-requisitos">Pré-Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-rodando-a-aplicação-web">Frontend</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-licença">Lincença</a>
 </p>
@@ -71,10 +72,9 @@ $ yarn start
 
 Esse projeto foi desenvolvido com as seguintes tecnologias:
 
-- React
+- ReactJS
 - Typescript
-- Next
-- Node
+- Next.js
 
 ### 📕 Bibliotecas
 
@@ -83,7 +83,6 @@ Esse projeto foi utilizou das seguintes lib:
 - react-dom
 - axios
 - date-fns
-- styled-components
 - rc-slider
 - json-server
 
