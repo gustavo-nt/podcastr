@@ -31,9 +31,13 @@
                 border-radius: 1rem;
             }
 
-            .episodeDetails {
+            > div {
                 flex: 1;
                 margin-left: 1rem;
+
+                &:first-child {
+                    max-width: 192px !important;
+                }
 
                 a {
                     display: block;
@@ -162,6 +166,83 @@
 
             &:hover {
                 filter: brightness(0.95);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .latestEpisodes {
+        ul {
+            grid-template-columns: 1fr;
+
+            li {
+                div {
+                    a {
+                        overflow: hidden;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 2;
+                        -webkit-box-orient: vertical;
+                    }
+
+                    p {
+                        max-width: 90%;
+                        overflow: hidden;
+                        white-space: unset;
+                        display: -webkit-box;
+                        -webkit-line-clamp: 1;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+
+                button {
+                    top: 50%;
+                    right: 0.525rem;
+                    transform: translate(50%, -50%);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) and (max-width: 720px) { 
+    .homepage {
+        padding: 0 1rem;
+        height: calc(100vh - 221px);
+    }
+}
+
+@media screen and (max-width: 1500px) and (min-width: 720px) { 
+    .homepage {
+        padding: 0 1rem;
+        height: calc(100vh - 250px);
+    }
+}
+
+@media screen and (max-width: 1500px) and (max-width: 720px) and (min-width: 580px) { 
+    .homepage {
+        padding: 0 1rem;
+        height: calc(100vh - 232px);
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .allEpisodes {
+        padding-bottom: 1rem;
+        overflow-x: auto;
+        width: 100%;
+
+        table {
+            td {
+                white-space: nowrap;
+            }
+
+            tbody tr td {
+                &:first-child {
+                    > div {
+                        width: 65px;
+                    }
+                }
             }
         }
     }

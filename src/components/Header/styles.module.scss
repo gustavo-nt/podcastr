@@ -6,6 +6,10 @@
     padding: 2rem 4rem;
     border-bottom: 1px solid var(--gray-100);
 
+    img {
+        cursor: pointer;
+    }
+
     p {
         margin-left: 2rem;
         padding: 0.25rem 0 0.25rem 2rem;
@@ -15,5 +19,17 @@
     span {
         margin-left: auto;
         text-transform: capitalize;
+    }
+}
+
+@media screen and (min-width: 0) and (max-width: 580px) {
+    .headerContainer {
+        img {
+            width: 9rem;
+        }
+    
+        p {
+            display: none;
+        }
     }
 }
