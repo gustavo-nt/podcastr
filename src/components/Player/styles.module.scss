@@ -16,6 +16,10 @@
         gap: 1rem;
     }
 
+    span {
+        display: none;
+    }
+
     > p {
         display: none;
     }
@@ -173,6 +177,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             font-weight: bold;
+            display: block;
         }
 
         footer {
@@ -249,6 +254,7 @@
             text-overflow: ellipsis;
             white-space: nowrap;
             font-weight: bold;
+            display: block;
         }
 
         footer {
