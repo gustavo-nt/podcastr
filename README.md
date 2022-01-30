@@ -58,9 +58,6 @@ $ git clone https://github.com/gustavo-nt/podcastr
 # Instale as dependências
 $ yarn
 
-# Rode o servidor fake
-$ yarn server
-
 # Execute a aplicação
 $ yarn dev
 
@@ -84,7 +81,6 @@ Esse projeto foi utilizou das seguintes lib:
 - axios
 - date-fns
 - rc-slider
-- json-server
 
 ### 📝 Licença
 
