@@ -126,7 +126,7 @@ export function Player() {
                 )}
 
                 <div className={styles.buttons}>
-                    <button type="button" disabled={!episode || episodeList.length === 1} onClick={toggleShuffle} className={isShuffling ? styles.isActive : ''}>
+                    <button type="button" disabled={!episode || episodeList.length === 1} onClick={toggleShuffle} className={`${isShuffling ? styles.isActive : ''} ${isLooping ? styles.isBlocked : ''}`}>
                         <img src="/shuffle.svg" alt="Embaralhar"/>
                     </button>
                     <button type="button" disabled={!episode || !hasPrevious} onClick={playPrevious}>
@@ -134,17 +134,15 @@ export function Player() {
                     </button>
                     <button type="button" className={styles.playButton} disabled={!episode} onClick={togglePlay}>
                         { isPlaying ? (
-                            // <img src="/pause.svg" alt="Pausar"/>
                             <AiOutlinePause />
                         ) : (
-                            // <img src="/play.svg" alt="Tocar"/>
                             <BsFillPlayFill />
                         )}
                     </button>
                     <button type="button" disabled={!episode || !hasNext} onClick={playNext}>
                         <img src="/play-next.svg" alt="Tocar próxima"/>
                     </button>
-                    <button type="button" disabled={!episode} onClick={toggleLoop} className={isLooping ? styles.isActive : ''}>
+                    <button type="button" disabled={!episode} onClick={toggleLoop} className={`${isLooping ? styles.isActive : ''} ${isShuffling ? styles.isBlocked : ''}`}>
                         <img src="/repeat.svg" alt="Repetir"/>
                     </button>
                 </div>
